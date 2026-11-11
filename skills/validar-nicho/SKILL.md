@@ -1,6 +1,6 @@
 ---
 name: validar-nicho
-description: Valida um nicho antes de começar - demanda, RPM com fontes, concorrência, risco de desmonetização e custo de produção - e dá nota e decisão (começar, ajustar ou trocar). Use quando a pessoa perguntar se um nicho vale a pena ou rodar /validar-nicho <nicho>.
+description: Valida um nicho antes de começar - demanda, RPM com fontes, concorrência, risco de desmonetização e custo de produção - e dá nota e decisão (começar, ajustar ou trocar). Use quando a pessoa perguntar se um nicho vale a pena ou rodar /validar-nicho com o nicho.
 ---
 
 # Validar o nicho (aulas 2.5 e 3.1)

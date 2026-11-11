@@ -1,6 +1,6 @@
 ---
 name: titulos-thumbs
-description: Analisa os títulos e thumbnails dos vídeos mais vistos de um nicho, monta 3 fórmulas de título e um checklist de thumbnail, e aplica nas ideias do canal. Use quando a pessoa pedir títulos, thumbnails ou rodar /titulos-thumbs <nicho>.
+description: Analisa os títulos e thumbnails dos vídeos mais vistos de um nicho, monta 3 fórmulas de título e um checklist de thumbnail, e aplica nas ideias do canal. Use quando a pessoa pedir títulos, thumbnails ou rodar /titulos-thumbs com o nicho.
 ---
 
 # Títulos e thumbnails (aula 2.4)

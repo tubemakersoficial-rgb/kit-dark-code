@@ -1,6 +1,6 @@
 ---
 name: outliers
-description: Caça outliers de um nicho - vídeos do último mês com muito mais views do que o canal tem de inscritos - e tira o padrão que eles têm em comum. Use quando a pessoa quiser saber o que está estourando agora no nicho ou rodar /outliers <nicho>.
+description: Caça outliers de um nicho - vídeos do último mês com muito mais views do que o canal tem de inscritos - e tira o padrão que eles têm em comum. Use quando a pessoa quiser saber o que está estourando agora no nicho ou rodar /outliers com o nicho.
 ---
 
 # Outliers (aula 2.3)

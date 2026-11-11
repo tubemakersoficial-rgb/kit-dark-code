@@ -1,6 +1,6 @@
 ---
 name: revisar-roteiro
-description: Revisa um roteiro como um editor exigente - confere de novo os fatos, acerta ritmo e repetições, prepara o texto para voz de IA e mostra uma tabela do que mudou, guardando a versão anterior. Use quando a pessoa pedir para revisar um roteiro ou rodar /revisar-roteiro <arquivo>.
+description: Revisa um roteiro como um editor exigente - confere de novo os fatos, acerta ritmo e repetições, prepara o texto para voz de IA e mostra uma tabela do que mudou, guardando a versão anterior. Use quando a pessoa pedir para revisar um roteiro ou rodar /revisar-roteiro com o arquivo.
 ---
 
 # Revisar o roteiro (aula 4.2)

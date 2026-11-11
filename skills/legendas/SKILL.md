@@ -1,6 +1,6 @@
 ---
 name: legendas
-description: Transcreve um áudio ou vídeo com o Whisper no computador da pessoa e cria a legenda .srt sincronizada. Use quando a pessoa pedir legenda, transcrição ou rodar /legendas <arquivo>.
+description: Transcreve um áudio ou vídeo com o Whisper no computador da pessoa e cria a legenda .srt sincronizada. Use quando a pessoa pedir legenda, transcrição ou rodar /legendas com o arquivo.
 ---
 
 # Legendas (aulas 0.8 e 4.4)

@@ -1,6 +1,6 @@
 ---
 name: roteiro-dark
-description: Escreve o roteiro de um vídeo do canal seguindo o CLAUDE.md - explica antes o que prende no nicho, monta blocos com ritmo, confere os fatos no navegador e entrega o mapa de retenção. Use quando a pessoa pedir um roteiro ou rodar /roteiro-dark <ideia>.
+description: Escreve o roteiro de um vídeo do canal seguindo o CLAUDE.md - explica antes o que prende no nicho, monta blocos com ritmo, confere os fatos no navegador e entrega o mapa de retenção. Use quando a pessoa pedir um roteiro ou rodar /roteiro-dark com a ideia.
 ---
 
 # Roteiro dark (aulas 3.6 e 4.1)

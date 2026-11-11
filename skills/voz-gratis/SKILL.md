@@ -1,6 +1,6 @@
 ---
 name: voz-gratis
-description: Gera narração com voz grátis (Edge-TTS) a partir de um roteiro ou texto, para testar antes de assinar uma voz paga. Use quando a pessoa pedir narração grátis, voz de teste ou rodar /voz-gratis <roteiro>.
+description: Gera narração com voz grátis (Edge-TTS) a partir de um roteiro ou texto, para testar antes de assinar uma voz paga. Use quando a pessoa pedir narração grátis, voz de teste ou rodar /voz-gratis com o roteiro.
 ---
 
 # Voz grátis (aulas 0.14 e 4.5)

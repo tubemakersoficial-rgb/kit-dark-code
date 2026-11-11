@@ -1,6 +1,6 @@
 ---
 name: meu-canal
-description: Produz um vídeo do MEU canal do começo ao fim, do jeito que eu faço. Use quando eu pedir "faz o vídeo da semana" ou rodar /meu-canal <ideia>.
+description: Produz um vídeo do MEU canal do começo ao fim, do jeito que eu faço. Use quando eu pedir "faz o vídeo da semana" ou rodar /meu-canal com a ideia.
 ---
 
 # Meu canal (modelo da aula 1.5)

@@ -1,6 +1,6 @@
 ---
 name: meu-nicho
-description: Monta o canal a partir de um nicho que a pessoa já tem - valida, analisa concorrentes, propõe 3 ângulos, cria a identidade (nome, CLAUDE.md, ficha do canal) e as 10 primeiras ideias. Use quando a pessoa disser que já tem um nicho ou tema para o canal, ou rodar /meu-nicho <nicho>.
+description: Monta o canal a partir de um nicho que a pessoa já tem - valida, analisa concorrentes, propõe 3 ângulos, cria a identidade (nome, CLAUDE.md, ficha do canal) e as 10 primeiras ideias. Use quando a pessoa disser que já tem um nicho ou tema para o canal, ou rodar /meu-nicho com o nicho.
 ---
 
 # Meu nicho (módulo 3)

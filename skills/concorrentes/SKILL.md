@@ -1,6 +1,6 @@
 ---
 name: concorrentes
-description: Abre os canais concorrentes de um nicho no YouTube, compara os vídeos que mais funcionam numa tabela e acha o espaço vazio com 5 ideias de vídeo. Use quando a pessoa escolheu um nicho e quer conhecer a concorrência, ou rodar /concorrentes <nicho>.
+description: Abre os canais concorrentes de um nicho no YouTube, compara os vídeos que mais funcionam numa tabela e acha o espaço vazio com 5 ideias de vídeo. Use quando a pessoa escolheu um nicho e quer conhecer a concorrência, ou rodar /concorrentes com o nicho.
 ---
 
 # Concorrentes (aulas 2.2 e 3.2)

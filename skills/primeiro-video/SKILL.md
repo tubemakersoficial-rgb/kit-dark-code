@@ -1,6 +1,6 @@
 ---
 name: primeiro-video
-description: Faz um vídeo curto completo (cerca de 1 minuto) só com ferramentas grátis - roteiro com fatos conferidos, voz grátis, cenas no Remotion, legenda e montagem. Use quando a pessoa pedir o primeiro vídeo, um vídeo de teste do canal ou rodar /primeiro-video <tema>.
+description: Faz um vídeo curto completo (cerca de 1 minuto) só com ferramentas grátis - roteiro com fatos conferidos, voz grátis, cenas no Remotion, legenda e montagem. Use quando a pessoa pedir o primeiro vídeo, um vídeo de teste do canal ou rodar /primeiro-video com o tema.
 ---
 
 # Primeiro vídeo (aula 0.14)
