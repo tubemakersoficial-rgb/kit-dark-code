@@ -14,7 +14,7 @@ Ou, no terminal, dentro da pasta do kit:
 python instalar.py
 ```
 
-O instalador só copia arquivos de texto para a pasta `.claude` do seu usuário. Ele não instala programas, não pede senha e não apaga nada: se já existir uma skill com o mesmo nome, a antiga é guardada com `.antigo`.
+O instalador só copia arquivos de texto para a pasta `.claude` do seu usuário. Ele não instala programas, não pede senha e não apaga nada: se já existir uma skill com o mesmo nome, a antiga é guardada em `.claude/dark-code/versoes-antigas`.
 
 ## O que vem no kit
 
