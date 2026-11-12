@@ -1,4 +1,4 @@
-# Mapa do Kit Dark Code (versão 0.2)
+# Mapa do Kit Dark Code (versão 0.3)
 
 ## Skills
 Digite `/` numa sessão do Claude Code para ver a lista. Cada skill também é acionada quando você pede a tarefa com as suas palavras.
@@ -18,6 +18,7 @@ Digite `/` numa sessão do Claude Code para ver a lista. Cada skill também é a
 | `/revisar-roteiro` | 4.2 | Revisão de editor, com a tabela do que mudou |
 | `/narracao` | 4.3 | Narração com voz de IA pelo ai33, testando na abertura antes de gastar |
 | `/voz-gratis` | 0.14 e 4.5 | Narração grátis com Edge-TTS |
+| `/sons` | 4.7 | Música e ambiente por baixo da narração, com a licença de cada som conferida |
 | `/legendas` | 0.8 e 4.4 | Legenda .srt com o Whisper |
 | `/ajuda-dark-code` | 1.7 | Tira dúvidas do curso e do kit |
 
@@ -39,6 +40,7 @@ O Claude chama os agentes quando a tarefa pede. Você também pode pedir: "use o
 | `recortar.py` | Tira o fundo de imagens com o rembg |
 | `voz_gratis.py` | Narração grátis com Edge-TTS |
 | `ai33_tts.py` | Narração com voz de IA pelo ai33: vozes, abertura de teste, roteiro inteiro e conferência com o Whisper |
+| `trilha.py` | Confere a origem de cada som e mistura música e ambiente por baixo da voz, com ducking e volume final |
 
 ## Modelos (pasta `modelos/`)
 | Arquivo | Para que serve |
@@ -74,6 +76,7 @@ O Claude chama os agentes quando a tarefa pede. Você também pode pedir: "use o
 | 4.1 | `prompts/4-1-roteiro-que-prende.md` |
 | 4.2 | `prompts/4-2-revisao.md` |
 | 4.3 | `prompts/4-3-narracao-com-ia.md` |
+| 4.7 | `prompts/4-7-musica-e-efeitos.md` |
 
 ## O que ainda vem
 Imagens automáticas, montagem do vídeo, thumbnails, os formatos (histórias para dormir, banco de vídeos, palito, Shorts e outros), publicação e analytics entram nas próximas versões, junto com as aulas.

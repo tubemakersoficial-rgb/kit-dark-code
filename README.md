@@ -2,7 +2,7 @@
 
 Skills, agentes, scripts e prompts do curso **Dark Code** (TubeMaker Academy): criar um canal dark no YouTube do zero, usando só o Claude Code.
 
-Versão 0.2: cobre os módulos 0 (o app e o kit do canal), 2 (pesquisa), 3 (seu nicho) e o começo do 4 (roteiro e narração com IA).
+Versão 0.3: cobre os módulos 0 (o app e o kit do canal), 2 (pesquisa), 3 (seu nicho) e o 4 (roteiro, narração com IA, legenda e trilha).
 
 ## Como instalar
 
@@ -18,7 +18,7 @@ O instalador só copia arquivos de texto para a pasta `.claude` do seu usuário.
 
 ## O que vem no kit
 
-15 skills, 5 agentes, 4 scripts, 3 modelos e 24 prompts das aulas. A lista completa, com a aula de cada um, está no [MAPA.md](MAPA.md).
+16 skills, 5 agentes, 5 scripts, 3 modelos e 25 prompts das aulas. A lista completa, com a aula de cada um, está no [MAPA.md](MAPA.md).
 
 | Skill | O que faz |
 |---|---|
@@ -35,6 +35,7 @@ O instalador só copia arquivos de texto para a pasta `.claude` do seu usuário.
 | `/revisar-roteiro` | Revisão de editor, com a tabela do que mudou |
 | `/narracao` | Narração com voz de IA pelo ai33, testando na abertura antes de gastar |
 | `/voz-gratis` | Narração grátis com Edge-TTS |
+| `/sons` | Música e ambiente por baixo da narração, com a licença de cada som conferida |
 | `/legendas` | Legenda .srt com o Whisper |
 | `/ajuda-dark-code` | Tira dúvidas do curso e do kit |
 
