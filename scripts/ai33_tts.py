@@ -88,7 +88,9 @@ def chave():
     return k, origem
 
 
-def pedir(metodo, caminho, campos=None, query=None, tentativas=3):
+def pedir(metodo, caminho, campos=None, query=None, tentativas=6):
+    # 6 tentativas: o ai33 às vezes responde 503 "server_busy" ao consultar uma tarefa (visto em 12/11/2026);
+    # desistir cedo deixaria um trecho já pago sem baixar.
     url = BASE + caminho
     if query:
         url += "?" + urllib.parse.urlencode({k: v for k, v in query.items() if v not in (None, "")})
