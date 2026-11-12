@@ -58,6 +58,7 @@ O Claude chama os agentes quando a tarefa pede. Você também pode pedir: "use o
 | 0.7 | `prompts/0-7-ffmpeg.md` |
 | 0.8 | `prompts/0-8-whisper.md` |
 | 0.9 | `prompts/0-9-remotion.md` |
+| 0.10 | `prompts/0-10-motion-graphics.md` |
 | 0.11 | `prompts/0-11-teste-do-chrome.md` |
 | 0.12 | `prompts/0-12-kit-de-imagem.md` |
 | 0.13 | `prompts/0-13-checkup.md` |

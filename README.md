@@ -18,7 +18,7 @@ O instalador só copia arquivos de texto para a pasta `.claude` do seu usuário.
 
 ## O que vem no kit
 
-16 skills, 5 agentes, 5 scripts, 3 modelos e 25 prompts das aulas. A lista completa, com a aula de cada um, está no [MAPA.md](MAPA.md).
+16 skills, 5 agentes, 5 scripts, 3 modelos e 26 prompts das aulas. A lista completa, com a aula de cada um, está no [MAPA.md](MAPA.md).
 
 | Skill | O que faz |
 |---|---|
@@ -51,4 +51,4 @@ As skills seguem as mesmas regras das aulas: só números vistos na tela ou com 
 
 ## Motion graphics
 
-A skill `claude-video`, usada nas aulas 0.10 e 1.6, é de outro autor e não vem neste kit. A aula 0.10 mostra como instalar pelo repositório dela.
+A skill `claude-video` (licença MIT, de Felipe Borges) é de outro autor e não vem neste kit. A aula 0.10 mostra como instalar pelo repositório dela. A vinheta da aula 1.6 é feita com o Remotion, que vem da aula 0.9.
