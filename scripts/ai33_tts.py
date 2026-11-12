@@ -54,7 +54,8 @@ from pathlib import Path
 BASE = "https://api.ai33.pro"
 AGENTE = "dark-code-kit/0.2"
 MODELO_WHISPER = "mobiuslabsgmbh/faster-whisper-large-v3-turbo"
-LIMITE_SEM_APROVACAO = 3000      # caracteres; acima disso precisa de --pode-gastar
+LIMITE_SEM_APROVACAO = 3000      # créditos estimados; acima disso precisa de --pode-gastar
+CREDITOS_POR_CARACTERE = 1.15    # medido em 12/11/2026: cerca de 1,12 (476 créditos para 426 caracteres), com folga
 TAMANHO_MAX_TRECHO = 2500        # caracteres por pedido; trechos maiores são divididos nos parágrafos
 AO_MESMO_TEMPO = 4               # pedidos simultâneos ao ai33
 
@@ -377,6 +378,7 @@ def cmd_roteiro(a):
     pendentes = [t for t in trechos if t["n"] in refazer or not (pasta / t["arquivo"]).exists()]
     chars_total = sum(len(t["texto"]) for t in trechos)
     chars_gerar = sum(len(t["texto"]) for t in pendentes)
+    custo = round(chars_gerar * CREDITOS_POR_CARACTERE)
     pausas = sum(1 for t in trechos if t["pausa_depois"] > 0)
     palavras = sum(len(t["texto"].split()) for t in trechos)
 
@@ -384,7 +386,7 @@ def cmd_roteiro(a):
     print(f"Texto narrado: {palavras} palavras, {chars_total} caracteres, {len(trechos)} trechos, {pausas} pausas")
     print(f"Duração estimada: {mmss(palavras / 150 * 60 / max(a.velocidade, 0.5) + sum(t['pausa_depois'] for t in trechos))} "
           f"(150 palavras por minuto na velocidade 1)")
-    print(f"A gerar agora: {len(pendentes)} trechos, {chars_gerar} caracteres = cerca de {chars_gerar} créditos (estimativa: 1 crédito por caractere)")
+    print(f"A gerar agora: {len(pendentes)} trechos, {chars_gerar} caracteres = cerca de {custo} créditos (estimativa: {CREDITOS_POR_CARACTERE} crédito por caractere)")
 
     if a.ver:
         print("\nComeço do texto:\n  " + trechos[0]["texto"][:300].replace("\n", "\n  "))
@@ -393,15 +395,15 @@ def cmd_roteiro(a):
         return
     if not a.voz:
         sys.exit("Falta a voz. Liste as vozes com o comando vozes, ouça as prévias e passe --voz com o código da escolhida.")
-    if chars_gerar > LIMITE_SEM_APROVACAO and not a.pode_gastar:
-        sys.exit(f"Isso vai gastar cerca de {chars_gerar} créditos. Mostre esse número para a pessoa e, "
+    if custo > LIMITE_SEM_APROVACAO and not a.pode_gastar:
+        sys.exit(f"Isso vai gastar cerca de {custo} créditos. Mostre esse número para a pessoa e, "
                  "depois que ela aprovar, rode de novo com --pode-gastar.")
     if pendentes:
         n, _ = saldo()
         if n is not None:
             print(f"Saldo antes: {n:,.0f} créditos".replace(",", "."))
-            if n < chars_gerar:
-                sys.exit(f"O saldo ({n:.0f}) não cobre os {chars_gerar} créditos estimados. Compre créditos e rode de novo.")
+            if n < custo:
+                sys.exit(f"O saldo ({n:.0f}) não cobre os {custo} créditos estimados. Compre créditos e rode de novo.")
         pasta.mkdir(parents=True, exist_ok=True)
         print(f"Gerando {len(pendentes)} trechos com a voz {a.voz}, velocidade {a.velocidade}...", flush=True)
         gasto = gerar_trechos(pendentes, pasta, a.voz, a.velocidade)
@@ -463,8 +465,8 @@ def cmd_conferir(a):
 
 def cmd_falar(a):
     texto = a.texto if a.texto else Path(a.arquivo).read_text(encoding="utf-8").strip()
-    if len(texto) > LIMITE_SEM_APROVACAO and not a.pode_gastar:
-        sys.exit(f"Isso vai gastar cerca de {len(texto)} créditos. Depois que a pessoa aprovar, rode de novo com --pode-gastar.")
+    if len(texto) * CREDITOS_POR_CARACTERE > LIMITE_SEM_APROVACAO and not a.pode_gastar:
+        sys.exit(f"Isso vai gastar cerca de {round(len(texto) * CREDITOS_POR_CARACTERE)} créditos. Depois que a pessoa aprovar, rode de novo com --pode-gastar.")
     saida = Path(a.saida)
     tid = pedir_voz(texto, a.voz, a.velocidade, saida.stem)
     while True:

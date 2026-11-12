@@ -33,7 +33,7 @@ O script é `ferramentas/ai33_tts.py`, na pasta do canal. Se não estiver lá, c
 
 ## Cuidados
 
-- O custo é uma estimativa: 1 caractere gasta mais ou menos 1 crédito. Nunca narre o roteiro inteiro sem o sim da pessoa, e nunca compre créditos.
+- O custo é uma estimativa: cada caractere gasta cerca de 1,1 crédito, e o script calcula com um pouco de folga. Nunca narre o roteiro inteiro sem o sim da pessoa, e nunca compre créditos.
 - Não diga que o uso comercial está liberado. Diga para a pessoa ler os termos de uso do ai33 antes de monetizar.
 - Não apague a pasta `audios/.partes-NOME/` até o vídeo estar pronto: é ela que permite refazer um trecho sem gastar com o resto.
 
