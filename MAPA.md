@@ -1,4 +1,4 @@
-# Mapa do Kit Dark Code (versão 0.1)
+# Mapa do Kit Dark Code (versão 0.2)
 
 ## Skills
 Digite `/` numa sessão do Claude Code para ver a lista. Cada skill também é acionada quando você pede a tarefa com as suas palavras.
@@ -16,6 +16,7 @@ Digite `/` numa sessão do Claude Code para ver a lista. Cada skill também é a
 | `/meu-nicho` | módulo 3 | Do nicho que você já tem até as 10 primeiras ideias |
 | `/roteiro-dark` | 3.6 e 4.1 | Roteiro com fatos conferidos e mapa de retenção |
 | `/revisar-roteiro` | 4.2 | Revisão de editor, com a tabela do que mudou |
+| `/narracao` | 4.3 | Narração com voz de IA pelo ai33, testando na abertura antes de gastar |
 | `/voz-gratis` | 0.14 e 4.5 | Narração grátis com Edge-TTS |
 | `/legendas` | 0.8 e 4.4 | Legenda .srt com o Whisper |
 | `/ajuda-dark-code` | 1.7 | Tira dúvidas do curso e do kit |
@@ -37,6 +38,7 @@ O Claude chama os agentes quando a tarefa pede. Você também pode pedir: "use o
 | `legendar.py` | Transcreve um áudio com o Whisper e cria o `.srt` |
 | `recortar.py` | Tira o fundo de imagens com o rembg |
 | `voz_gratis.py` | Narração grátis com Edge-TTS |
+| `ai33_tts.py` | Narração com voz de IA pelo ai33: vozes, abertura de teste, roteiro inteiro e conferência com o Whisper |
 
 ## Modelos (pasta `modelos/`)
 | Arquivo | Para que serve |
@@ -71,6 +73,7 @@ O Claude chama os agentes quando a tarefa pede. Você também pode pedir: "use o
 | 3.6 | `prompts/3-6-primeiro-roteiro.md` |
 | 4.1 | `prompts/4-1-roteiro-que-prende.md` |
 | 4.2 | `prompts/4-2-revisao.md` |
+| 4.3 | `prompts/4-3-narracao-com-ia.md` |
 
 ## O que ainda vem
-Narração com voz paga, imagens automáticas, montagem do vídeo, thumbnails, os formatos (histórias para dormir, banco de vídeos, palito, Shorts e outros), publicação e analytics entram nas próximas versões, junto com as aulas.
+Imagens automáticas, montagem do vídeo, thumbnails, os formatos (histórias para dormir, banco de vídeos, palito, Shorts e outros), publicação e analytics entram nas próximas versões, junto com as aulas.

@@ -10,7 +10,7 @@ Deixa a pasta atual pronta para produzir vídeos.
 1. Crie as pastas `pesquisa`, `roteiros`, `audios`, `imagens`, `videos`, `thumbnails`, `publicados` e `ferramentas`. Não apague nada que já exista.
 2. Se não existir `CLAUDE.md`, copie o modelo `modelos/CLAUDE.md` do kit (fica em `~/.claude/dark-code/modelos/`). Se o kit não estiver lá, crie o arquivo com os campos: nome do canal, nicho, público, idioma, tom da narração, voz, estilo visual, duração dos vídeos e frequência de postagem, cada um com uma linha explicando para que serve.
 3. Se não existir `LEIA-ME.md`, crie um explicando em linguagem simples o que vai em cada pasta.
-4. Copie para `ferramentas/` os scripts do kit (`legendar.py`, `recortar.py`, `voz_gratis.py`) se ainda não estiverem lá.
+4. Copie para `ferramentas/` os scripts do kit (`legendar.py`, `recortar.py`, `voz_gratis.py`, `ai33_tts.py`) se ainda não estiverem lá.
 5. Mostre a estrutura criada e diga qual é o próximo passo: `/nichos-virais` (ainda não tem nicho) ou `/meu-nicho` (já tem um nicho em mente).
 
 ## Regras que valem sempre
